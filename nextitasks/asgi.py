@@ -1,5 +1,5 @@
 """
-ASGI config for nextitask project.
+ASGI config for nextitasks project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
