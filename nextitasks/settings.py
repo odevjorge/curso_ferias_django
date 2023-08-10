@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     # Apps que criamos
-    "web",
+    "web",  # adicione essa linha
 ]
 
 MIDDLEWARE = [
