@@ -17,3 +17,9 @@ Para a construção desse curso a gente criou um pequeno escopo de como iriamos 
 
 ## Replit
 Caso você não consiga rodar o projeto na sua maquina, utilize o nosso repositorio do [replit](https://replit.com/@odevjorge/cursoferiasdjango) você só precisa clicar no botão RUN para rodar o projeto.
+
+antes de rodar o projeto verifique se esta tudo atualizado:
+```
+git pull
+```
+> git pull verifica no repositorio se tem alterações e baixa todas elas.
