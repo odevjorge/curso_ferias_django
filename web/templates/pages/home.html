@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Tela de Login</h1>
-    <form>
-        <input type="text" placeholder="login"/>
-        <input type="password" placeholder="senha"/>
-        <button type="submit">Entrar</button>
-    </form>
-</body>
-</html>
+{% extends 'base_with_bars.html' %}
+
+Esse linha caso descomentada serve sobreescrever o conteudo da pagina retirando as bars
+{% comment %} {% block content %}{% endblock content %} {% endcomment %}
+
+{% block sidebar %}
+    <div style="overflow: auto; ">
+        {% for task in tasks %}
+        <div class="d-flex justify-content-between align-items-center border border-secondary rounded-2 px-3 py-1 m-2">
+            <div class="d-flex flex-column ">
+                <span class="fs-5 lh-1">{{ task.titulo }}</span>
+                <span class="fs-6 text-black-50" style="max-width: 20ch; white-space: nowrap; overflow: hidden;  text-overflow: ellipsis" >{{ task.descricao }}</span>
+            </div>
+            <i class="bi bi-pen fs-4"></i>
+        </div>
+        {% endfor %}
+    </div>
+    
+   
+{% endblock sidebar %}
+
+{% block content-inside %}
+
+{% endblock content-inside %}
